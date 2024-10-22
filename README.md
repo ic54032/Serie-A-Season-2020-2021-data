@@ -5,7 +5,7 @@ This repository contains a **CSV file** of Serie A team data and a **JSON file**
 
 ## Metadata
 - **Open license:** Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)
-- **Author:** Vaše ime i prezime
+- **Author:** Ivan Cvijetić
 - **Dataset version:** 1.0
 - **Language:** English
 -**Atribute description**
@@ -22,4 +22,4 @@ This repository contains a **CSV file** of Serie A team data and a **JSON file**
   11. **playerLastName**: The last name of a player in the team.
   12. **position**: The position of the player on the field (e.g., goalkeeper, defender, middlefielder, forward).
 
-- **Datum zadnjeg ažuriranja:** 2024-10-22
+- **Last updated:** 2024-10-22
