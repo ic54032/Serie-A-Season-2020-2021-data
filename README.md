@@ -1,7 +1,7 @@
 # Serie-A-Season-2020-2021-data
 
 ## Description
-This repository contains a **CSV file** of Serie A team data and a **JSON file** that organizes this data. Each team includes detailed statistics and a list of players that contains one importan player for each respective position on the field.
+This repository contains a **CSV file** of Serie A team data and a **JSON file** that organizes this data. Each team includes detailed statistics and a list of players that contains one important player for each respective position on the field.
 
 ## Metadata
 - **Open license:** Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)
