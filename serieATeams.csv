@@ -1,0 +1,81 @@
+team,goals,shotspg,yellow_cards,red_cards,avgposessionperc,avgpassaccperc,aerialswon,rating,playerFirstName,playerLastName,position
+Juventus,77,15.7,76,6,55.4,88.3,11.4,6.85,Gianluigi ,Buffon,goalkeeper
+Juventus,77,15.7,76,6,55.4,88.3,11.4,6.85,Giorgio ,Chiellini,defender
+Juventus,77,15.7,76,6,55.4,88.3,11.4,6.85,Aaron ,Ramsey,middlefielder
+Juventus,77,15.7,76,6,55.4,88.3,11.4,6.85,Cristiano,Ronaldo,forward
+Atalanta,90,16.3,66,3,53.5,83.5,16.8,6.84,Rafael,Toloi,goalkeeper
+Atalanta,90,16.3,66,3,53.5,83.5,16.8,6.84,Marten,de Roon,middlefielder
+Atalanta,90,16.3,66,3,53.5,83.5,16.8,6.84,Robin,Gosens,defender
+Atalanta,90,16.3,66,3,53.5,83.5,16.8,6.84,Luis,Muriel,forward
+AC Milan,74,14.7,80,4,51.4,84,15.2,6.82,Gianluigi ,Donnarumma,goalkeeper
+AC Milan,74,14.7,80,4,51.4,84,15.2,6.82,Theo,Hernandez,defender
+AC Milan,74,14.7,80,4,51.4,84,15.2,6.82,Brahim,Diaz,middlefielder
+AC Milan,74,14.7,80,4,51.4,84,15.2,6.82,Rafael,Leao,forward
+Napoli,86,17,71,3,54.1,87,11.1,6.81,David,Ospina,goalkeeper
+Napoli,86,17,71,3,54.1,87,11.1,6.81,Amir,Rrahmani,defender
+Napoli,86,17,71,3,54.1,87,11.1,6.81,Stanislav,Lobotka,middlefielder
+Napoli,86,17,71,3,54.1,87,11.1,6.81,Victor,Osimhen,forward
+Inter,89,14.5,59,2,52,87,11.8,6.8,Daniele,Padelli,goalkeeper
+Inter,89,14.5,59,2,52,87,11.8,6.8,Stefan,de Vrij,defender
+Inter,89,14.5,59,2,52,87,11.8,6.8,Arturo,Vidal,middlefielder
+Inter,89,14.5,59,2,52,87,11.8,6.8,Romelu,Lukaku,forward
+Roma,68,14.3,84,3,51.5,84.5,12.1,6.71,Daniel,Fuzato,goalkeeper
+Roma,68,14.3,84,3,51.5,84.5,12.1,6.71,Marash,Kumbulla,defender
+Roma,68,14.3,84,3,51.5,84.5,12.1,6.71,Lorenzo,Pellegrini,middlefielder
+Roma,68,14.3,84,3,51.5,84.5,12.1,6.71,Borja,Mayoral,forward
+Sassuolo,64,13.9,74,4,58.2,87.8,10.9,6.67,Stefano,Turati,goalkeeper
+Sassuolo,64,13.9,74,4,58.2,87.8,10.9,6.67,Jeremy,Toljan,defender
+Sassuolo,64,13.9,74,4,58.2,87.8,10.9,6.67,Manuel,Locatelli,middlefielder
+Sassuolo,64,13.9,74,4,58.2,87.8,10.9,6.67,Gianluca,Scamacca,forward
+Sampdoria,52,11.3,81,3,46.1,78.5,16.8,6.63,Karlo,Letica,goalkeeper
+Sampdoria,52,11.3,81,3,46.1,78.5,16.8,6.63,Omar,Colley,defender
+Sampdoria,52,11.3,81,3,46.1,78.5,16.8,6.63,Adrien,Silva,middlefielder
+Sampdoria,52,11.3,81,3,46.1,78.5,16.8,6.63,Keita,Balde,forward
+Lazio,61,13.8,100,5,52.2,83.8,14.6,6.62,Marco,Alia,goalkeeper
+Lazio,61,13.8,100,5,52.2,83.8,14.6,6.62,Luiz,Felipe,defender
+Lazio,61,13.8,100,5,52.2,83.8,14.6,6.62,Marco,Parolo,middlefielder
+Lazio,61,13.8,100,5,52.2,83.8,14.6,6.62,Ciro,Immobile,forward
+Torino,50,12.2,72,4,48,80.5,16.1,6.59,Salvatore,Sirigu,goalkeeper
+Torino,50,12.2,72,4,48,80.5,16.1,6.59,Ricardo,Rodriguez,defender
+Torino,50,12.2,72,4,48,80.5,16.1,6.59,Amer,Gojak,middlefielder
+Torino,50,12.2,72,4,48,80.5,16.1,6.59,Antonio,Sanabria,forward
+Verona,43,10.6,91,1,49.6,76.3,20.6,6.59,Alessandro,Berardi,goalkeeper
+Verona,43,10.6,91,1,49.6,76.3,20.6,6.59,Davide,Faraoni,defender
+Verona,43,10.6,91,1,49.6,76.3,20.6,6.59,Miguel,Veloso,middlefielder
+Verona,43,10.6,91,1,49.6,76.3,20.6,6.59,Eddie,Salcedo,forward
+Cagliari,43,11.4,73,3,45.8,79.8,17.2,6.58,Simeone,Aresti,goalkeeper
+Cagliari,43,11.4,73,3,45.8,79.8,17.2,6.58,Diego,Godin,defender
+Cagliari,43,11.4,73,3,45.8,79.8,17.2,6.58,Alfred,Duncan,middlefielder
+Cagliari,43,11.4,73,3,45.8,79.8,17.2,6.58,Giovanni,Simeone,forward
+Bologna,51,13.1,78,4,50.7,81.5,15.1,6.56,Angelo,Da Costa,goalkeeper
+Bologna,51,13.1,78,4,50.7,81.5,15.1,6.56,Araron,Hickey,defender
+Bologna,51,13.1,78,4,50.7,81.5,15.1,6.56,Nicolas,Dominiguez,middlefielder
+Bologna,51,13.1,78,4,50.7,81.5,15.1,6.56,Nicola,Sansone,forward
+Udinese,42,10.9,63,2,47.2,82.5,13.1,6.55,Juan,Musso,goalkeeper
+Udinese,42,10.9,63,2,47.2,82.5,13.1,6.55,Kevin,Bonifazi,defender
+Udinese,42,10.9,63,2,47.2,82.5,13.1,6.55,Mato,Jajalo,middlefielder
+Udinese,42,10.9,63,2,47.2,82.5,13.1,6.55,Ilija,Nestorovski,forward
+Genoa,47,9,85,2,46.1,79.7,13.7,6.54,Mattia,Perin,goalkeeper
+Genoa,47,9,85,2,46.1,79.7,13.7,6.54,Cristan,Zapata,defender
+Genoa,47,9,85,2,46.1,79.7,13.7,6.54,Filippo,Melegoni,middlefielder
+Genoa,47,9,85,2,46.1,79.7,13.7,6.54,Marko,Pjaca,forward
+Fiorentina,47,9.8,86,5,46.8,81,14.2,6.52,Pietro ,Terracciano,goalkeeper
+Fiorentina,47,9.8,86,5,46.8,81,14.2,6.52,Lorenzo,Venuti,defender
+Fiorentina,47,9.8,86,5,46.8,81,14.2,6.52,Borja,Valero,middlefielder
+Fiorentina,47,9.8,86,5,46.8,81,14.2,6.52,Franck,Ribery,forward
+Spezia,52,10.2,92,5,51.6,81.1,14.4,6.5,Jeroen,Zoet,goalkeeper
+Spezia,52,10.2,92,5,51.6,81.1,14.4,6.5,Juan,Ramos,defender
+Spezia,52,10.2,92,5,51.6,81.1,14.4,6.5,Matteo,Ricci,middlefielder
+Spezia,52,10.2,92,5,51.6,81.1,14.4,6.5,Daniele,Verde,forward
+Parma Calcio 1913,39,10.4,91,1,48.4,82.5,16.9,6.49,Luigi,Sepe,goalkeeper
+Parma Calcio 1913,39,10.4,91,1,48.4,82.5,16.9,6.49,Giuseppe,Pezzella,defender
+Parma Calcio 1913,39,10.4,91,1,48.4,82.5,16.9,6.49,Alberto,Grassi,middlefielder
+Parma Calcio 1913,39,10.4,91,1,48.4,82.5,16.9,6.49,Yann,Karamoh,forward
+Crotone,45,9.5,85,4,47.2,80.4,12.7,6.43,Alex,Cordaz,goalkeeper
+Crotone,45,9.5,85,4,47.2,80.4,12.7,6.43,Giuseppe,Cuomo,defender
+Crotone,45,9.5,85,4,47.2,80.4,12.7,6.43,Junior,Messias,middlefielder
+Crotone,45,9.5,85,4,47.2,80.4,12.7,6.43,Adam,Ounas,forward
+Benevento,40,11,90,5,44.2,77.7,13.4,6.43,Lorenzo,Montipo,goalkeeper
+Benevento,40,11,90,5,44.2,77.7,13.4,6.43,Luca,Antei,defender
+Benevento,40,11,90,5,44.2,77.7,13.4,6.43,Nicolas,Voila,middlefielder
+Benevento,40,11,90,5,44.2,77.7,13.4,6.43,Marco,Sau,forward
