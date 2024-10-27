@@ -8,7 +8,7 @@ This repository contains a **CSV file** of Serie A team data and a **JSON file**
 - **Author:** Ivan Cvijetić
 - **Dataset version:** 1.0
 - **Language:** English
--**Atribute description**
+- **Atribute description**
   1. **team_id**: Unique team identifier.
   2. **team**: The name of the football team.
   3. **goals**: The total number of goals scored by the team in the season.
