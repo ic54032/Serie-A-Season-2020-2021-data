@@ -23,4 +23,4 @@ This repository contains a **CSV file** of Serie A team data and a **JSON file**
   12. **playerLastName**: The last name of a player in the team.
   13. **position**: The position of the player on the field (e.g., goalkeeper, defender, middlefielder, forward).
 
-- **Last updated:** 2024-10-22
+- **Last updated:** 2024-10-27
