@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "default": [],
+  "title": "Serie A Teams",
+  "description": "A list of football teams in the Serie A league for season 2020-2021. Each team includes detailed statistics and a list of players that contains one important player for each respective position on the field.",
+  "items": {
+    "type": "object",
+    "title": "A Schema",
+    "required": [
+      "id",
+      "teamid",
+      "team",
+      "goals",
+      "shotspg",
+      "yellow_cards",
+      "red_cards",
+      "avgpossessionperc",
+      "avgpassaccperc",
+      "aerialswon",
+      "rating",
+      "players"
+    ],
+    "properties": {
+      "teamid": {
+        "type": "integer",
+        "title": "The teamid Schema",
+        "description": "Unique team identifier."
+      },
+      "team": {
+        "type": "string",
+        "title": "The team Schema",
+        "description": "The name of the football team."
+      },
+      "goals": {
+        "type": "integer",
+        "title": "The goals Schema",
+        "description": "The total number of goals scored by the team in the season."
+      },
+      "shotspg": {
+        "type": [
+          "number",
+          "integer"
+        ],
+        "title": "The shotspg Schema",
+        "description": "The average number of shots per game by the team."
+      },
+      "yellow_cards": {
+        "type": "integer",
+        "title": "The yellow_cards Schema",
+        "description": "The total number of yellow cards received by the team."
+      },
+      "red_cards": {
+        "type": "integer",
+        "title": "The red_cards Schema",
+        "description": "The total number of red cards received by the team."
+      },
+      "avgpossessionperc": {
+        "type": [
+          "number",
+          "integer"
+        ],
+        "title": "The avgpossessionperc Schema",
+        "description": "The average possession percentage of the team."
+      },
+      "avgpassaccperc": {
+        "type": [
+          "number",
+          "integer"
+        ],
+        "title": "The avgpassaccperc Schema",
+        "description": "The average pass accuracy percentage of the team."
+      },
+      "aerialswon": {
+        "type": "integer",
+        "title": "The aerialswon Schema",
+        "description": "The average number of aerial duels won by the team per game."
+      },
+      "rating": {
+        "type": "number",
+        "title": "The rating Schema",
+        "description": "The average rating of the team based on performance metrics."
+      },
+      "players": {
+        "type": "array",
+        "title": "The players Schema",
+        "items": {
+          "type": "object",
+          "title": "A Schema",
+          "required": [
+            "playerid",
+            "playerfirstname",
+            "playerlastname",
+            "position"
+          ],
+          "properties": {
+            "playerid": {
+              "type": "integer",
+              "title": "The playerid Schema"
+            },
+            "playerfirstname": {
+              "type": "string",
+              "title": "The playerfirstname Schema",
+              "description": "The first name of a player in the team."
+            },
+            "playerlastname": {
+              "type": "string",
+              "title": "The playerlastname Schema",
+              "description": "The last name of a player in the team."
+            },
+            "position": {
+              "type": "string",
+              "title": "The position Schema",
+              "description": "The position of the player on the field (e.g., goalkeeper, defender, middlefielder, forward)."
+            }
+          }
+        }
+      }
+    }
+  }
+}
