@@ -1,0 +1,742 @@
+{
+    "Juventus": {
+        "team_id": "1",
+        "goals": 77,
+        "shots_per_game": 15.7,
+        "yellow_cards": 76,
+        "red_cards": 6,
+        "average_possession_percentage": 55.4,
+        "average_pass_accuracy_percentage": 88.3,
+        "aerials_won": 11.4,
+        "rating": 6.85,
+        "players": [
+            {
+                "player_id": 1,
+                "first_name": "Gianluigi",
+                "last_name": "Buffon",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 2,
+                "first_name": "Giorgio",
+                "last_name": "Chiellini",
+                "position": "defender"
+            },
+            {
+                "player_id": 3,
+                "first_name": "Aaron",
+                "last_name": "Ramsey",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 4,
+                "first_name": "Cristiano",
+                "last_name": "Ronaldo",
+                "position": "forward"
+            }
+        ]
+    },
+    "Atalanta": {
+        "team_id": "2",
+        "goals": 90,
+        "shots_per_game": 16.3,
+        "yellow_cards": 66,
+        "red_cards": 3,
+        "average_possession_percentage": 53.5,
+        "average_pass_accuracy_percentage": 83.5,
+        "aerials_won": 16.8,
+        "rating": 6.84,
+        "players": [
+            {
+                "player_id": 5,
+                "first_name": "Rafael",
+                "last_name": "Toloi",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 6,
+                "first_name": "Marten",
+                "last_name": "de Roon",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 7,
+                "first_name": "Robin",
+                "last_name": "Gosens",
+                "position": "defender"
+            },
+            {
+                "player_id": 8,
+                "first_name": "Luis",
+                "last_name": "Muriel",
+                "position": "forward"
+            }
+        ]
+    },
+    "AC Milan": {
+        "team_id": "3",
+        "goals": 74,
+        "shots_per_game": 14.7,
+        "yellow_cards": 80,
+        "red_cards": 4,
+        "average_possession_percentage": 51.4,
+        "average_pass_accuracy_percentage": 84.0,
+        "aerials_won": 15.2,
+        "rating": 6.82,
+        "players": [
+            {
+                "player_id": 9,
+                "first_name": "Gianluigi",
+                "last_name": "Donnarumma",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 10,
+                "first_name": "Theo",
+                "last_name": "Hernandez",
+                "position": "defender"
+            },
+            {
+                "player_id": 11,
+                "first_name": "Brahim",
+                "last_name": "Diaz",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 12,
+                "first_name": "Rafael",
+                "last_name": "Leao",
+                "position": "forward"
+            }
+        ]
+    },
+    "Napoli": {
+        "team_id": "4",
+        "goals": 86,
+        "shots_per_game": 17.0,
+        "yellow_cards": 71,
+        "red_cards": 3,
+        "average_possession_percentage": 54.1,
+        "average_pass_accuracy_percentage": 87.0,
+        "aerials_won": 11.1,
+        "rating": 6.81,
+        "players": [
+            {
+                "player_id": 13,
+                "first_name": "David",
+                "last_name": "Ospina",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 14,
+                "first_name": "Amir",
+                "last_name": "Rrahmani",
+                "position": "defender"
+            },
+            {
+                "player_id": 15,
+                "first_name": "Stanislav",
+                "last_name": "Lobotka",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 16,
+                "first_name": "Victor",
+                "last_name": "Osimhen",
+                "position": "forward"
+            }
+        ]
+    },
+    "Inter": {
+        "team_id": "5",
+        "goals": 89,
+        "shots_per_game": 14.5,
+        "yellow_cards": 59,
+        "red_cards": 2,
+        "average_possession_percentage": 52.0,
+        "average_pass_accuracy_percentage": 87.0,
+        "aerials_won": 11.8,
+        "rating": 6.8,
+        "players": [
+            {
+                "player_id": 17,
+                "first_name": "Daniele",
+                "last_name": "Padelli",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 18,
+                "first_name": "Stefan",
+                "last_name": "de Vrij",
+                "position": "defender"
+            },
+            {
+                "player_id": 19,
+                "first_name": "Arturo",
+                "last_name": "Vidal",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 20,
+                "first_name": "Romelu",
+                "last_name": "Lukaku",
+                "position": "forward"
+            }
+        ]
+    },
+    "Roma": {
+        "team_id": "6",
+        "goals": 68,
+        "shots_per_game": 14.3,
+        "yellow_cards": 84,
+        "red_cards": 3,
+        "average_possession_percentage": 51.5,
+        "average_pass_accuracy_percentage": 84.5,
+        "aerials_won": 12.1,
+        "rating": 6.71,
+        "players": [
+            {
+                "player_id": 21,
+                "first_name": "Daniel",
+                "last_name": "Fuzato",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 22,
+                "first_name": "Marash",
+                "last_name": "Kumbulla",
+                "position": "defender"
+            },
+            {
+                "player_id": 23,
+                "first_name": "Lorenzo",
+                "last_name": "Pellegrini",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 24,
+                "first_name": "Borja",
+                "last_name": "Mayoral",
+                "position": "forward"
+            }
+        ]
+    },
+    "Sassuolo": {
+        "team_id": "7",
+        "goals": 64,
+        "shots_per_game": 13.9,
+        "yellow_cards": 74,
+        "red_cards": 4,
+        "average_possession_percentage": 58.2,
+        "average_pass_accuracy_percentage": 87.8,
+        "aerials_won": 10.9,
+        "rating": 6.67,
+        "players": [
+            {
+                "player_id": 25,
+                "first_name": "Stefano",
+                "last_name": "Turati",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 26,
+                "first_name": "Jeremy",
+                "last_name": "Toljan",
+                "position": "defender"
+            },
+            {
+                "player_id": 27,
+                "first_name": "Manuel",
+                "last_name": "Locatelli",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 28,
+                "first_name": "Gianluca",
+                "last_name": "Scamacca",
+                "position": "forward"
+            }
+        ]
+    },
+    "Sampdoria": {
+        "team_id": "8",
+        "goals": 52,
+        "shots_per_game": 11.3,
+        "yellow_cards": 81,
+        "red_cards": 3,
+        "average_possession_percentage": 46.1,
+        "average_pass_accuracy_percentage": 78.5,
+        "aerials_won": 16.8,
+        "rating": 6.63,
+        "players": [
+            {
+                "player_id": 29,
+                "first_name": "Karlo",
+                "last_name": "Letica",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 30,
+                "first_name": "Omar",
+                "last_name": "Colley",
+                "position": "defender"
+            },
+            {
+                "player_id": 31,
+                "first_name": "Adrien",
+                "last_name": "Silva",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 32,
+                "first_name": "Keita",
+                "last_name": "Balde",
+                "position": "forward"
+            }
+        ]
+    },
+    "Lazio": {
+        "team_id": "9",
+        "goals": 61,
+        "shots_per_game": 13.8,
+        "yellow_cards": 100,
+        "red_cards": 5,
+        "average_possession_percentage": 52.2,
+        "average_pass_accuracy_percentage": 83.8,
+        "aerials_won": 14.6,
+        "rating": 6.62,
+        "players": [
+            {
+                "player_id": 33,
+                "first_name": "Marco",
+                "last_name": "Alia",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 34,
+                "first_name": "Luiz",
+                "last_name": "Felipe",
+                "position": "defender"
+            },
+            {
+                "player_id": 35,
+                "first_name": "Marco",
+                "last_name": "Parolo",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 36,
+                "first_name": "Ciro",
+                "last_name": "Immobile",
+                "position": "forward"
+            }
+        ]
+    },
+    "Torino": {
+        "team_id": "10",
+        "goals": 50,
+        "shots_per_game": 12.2,
+        "yellow_cards": 72,
+        "red_cards": 4,
+        "average_possession_percentage": 48.0,
+        "average_pass_accuracy_percentage": 80.5,
+        "aerials_won": 16.1,
+        "rating": 6.59,
+        "players": [
+            {
+                "player_id": 37,
+                "first_name": "Salvatore",
+                "last_name": "Sirigu",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 38,
+                "first_name": "Ricardo",
+                "last_name": "Rodriguez",
+                "position": "defender"
+            },
+            {
+                "player_id": 39,
+                "first_name": "Amer",
+                "last_name": "Gojak",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 40,
+                "first_name": "Antonio",
+                "last_name": "Sanabria",
+                "position": "forward"
+            }
+        ]
+    },
+    "Verona": {
+        "team_id": "11",
+        "goals": 43,
+        "shots_per_game": 10.6,
+        "yellow_cards": 91,
+        "red_cards": 1,
+        "average_possession_percentage": 49.6,
+        "average_pass_accuracy_percentage": 76.3,
+        "aerials_won": 20.6,
+        "rating": 6.59,
+        "players": [
+            {
+                "player_id": 41,
+                "first_name": "Alessandro",
+                "last_name": "Berardi",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 42,
+                "first_name": "Davide",
+                "last_name": "Faraoni",
+                "position": "defender"
+            },
+            {
+                "player_id": 43,
+                "first_name": "Miguel",
+                "last_name": "Veloso",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 44,
+                "first_name": "Eddie",
+                "last_name": "Salcedo",
+                "position": "forward"
+            }
+        ]
+    },
+    "Cagliari": {
+        "team_id": "12",
+        "goals": 43,
+        "shots_per_game": 11.4,
+        "yellow_cards": 73,
+        "red_cards": 3,
+        "average_possession_percentage": 45.8,
+        "average_pass_accuracy_percentage": 79.8,
+        "aerials_won": 17.2,
+        "rating": 6.58,
+        "players": [
+            {
+                "player_id": 45,
+                "first_name": "Simeone",
+                "last_name": "Aresti",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 46,
+                "first_name": "Diego",
+                "last_name": "Godin",
+                "position": "defender"
+            },
+            {
+                "player_id": 47,
+                "first_name": "Alfred",
+                "last_name": "Duncan",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 48,
+                "first_name": "Giovanni",
+                "last_name": "Simeone",
+                "position": "forward"
+            }
+        ]
+    },
+    "Bologna": {
+        "team_id": "13",
+        "goals": 51,
+        "shots_per_game": 13.1,
+        "yellow_cards": 78,
+        "red_cards": 4,
+        "average_possession_percentage": 50.7,
+        "average_pass_accuracy_percentage": 81.5,
+        "aerials_won": 15.1,
+        "rating": 6.56,
+        "players": [
+            {
+                "player_id": 49,
+                "first_name": "Angelo",
+                "last_name": "Da Costa",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 50,
+                "first_name": "Araron",
+                "last_name": "Hickey",
+                "position": "defender"
+            },
+            {
+                "player_id": 51,
+                "first_name": "Nicolas",
+                "last_name": "Dominiguez",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 52,
+                "first_name": "Nicola",
+                "last_name": "Sansone",
+                "position": "forward"
+            }
+        ]
+    },
+    "Udinese": {
+        "team_id": "14",
+        "goals": 42,
+        "shots_per_game": 10.9,
+        "yellow_cards": 63,
+        "red_cards": 2,
+        "average_possession_percentage": 47.2,
+        "average_pass_accuracy_percentage": 82.5,
+        "aerials_won": 13.1,
+        "rating": 6.55,
+        "players": [
+            {
+                "player_id": 53,
+                "first_name": "Juan",
+                "last_name": "Musso",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 54,
+                "first_name": "Kevin",
+                "last_name": "Bonifazi",
+                "position": "defender"
+            },
+            {
+                "player_id": 55,
+                "first_name": "Mato",
+                "last_name": "Jajalo",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 56,
+                "first_name": "Ilija",
+                "last_name": "Nestorovski",
+                "position": "forward"
+            }
+        ]
+    },
+    "Genoa": {
+        "team_id": "15",
+        "goals": 47,
+        "shots_per_game": 9.0,
+        "yellow_cards": 85,
+        "red_cards": 2,
+        "average_possession_percentage": 46.1,
+        "average_pass_accuracy_percentage": 79.7,
+        "aerials_won": 13.7,
+        "rating": 6.54,
+        "players": [
+            {
+                "player_id": 57,
+                "first_name": "Mattia",
+                "last_name": "Perin",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 58,
+                "first_name": "Cristan",
+                "last_name": "Zapata",
+                "position": "defender"
+            },
+            {
+                "player_id": 59,
+                "first_name": "Filippo",
+                "last_name": "Melegoni",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 60,
+                "first_name": "Marko",
+                "last_name": "Pjaca",
+                "position": "forward"
+            }
+        ]
+    },
+    "Fiorentina": {
+        "team_id": "16",
+        "goals": 47,
+        "shots_per_game": 9.8,
+        "yellow_cards": 86,
+        "red_cards": 5,
+        "average_possession_percentage": 46.8,
+        "average_pass_accuracy_percentage": 81.0,
+        "aerials_won": 14.2,
+        "rating": 6.52,
+        "players": [
+            {
+                "player_id": 61,
+                "first_name": "Pietro",
+                "last_name": "Terracciano",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 62,
+                "first_name": "Lorenzo",
+                "last_name": "Venuti",
+                "position": "defender"
+            },
+            {
+                "player_id": 63,
+                "first_name": "Borja",
+                "last_name": "Valero",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 64,
+                "first_name": "Franck",
+                "last_name": "Ribery",
+                "position": "forward"
+            }
+        ]
+    },
+    "Spezia": {
+        "team_id": "17",
+        "goals": 52,
+        "shots_per_game": 10.2,
+        "yellow_cards": 92,
+        "red_cards": 5,
+        "average_possession_percentage": 51.6,
+        "average_pass_accuracy_percentage": 81.1,
+        "aerials_won": 14.4,
+        "rating": 6.5,
+        "players": [
+            {
+                "player_id": 65,
+                "first_name": "Jeroen",
+                "last_name": "Zoet",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 66,
+                "first_name": "Juan",
+                "last_name": "Ramos",
+                "position": "defender"
+            },
+            {
+                "player_id": 67,
+                "first_name": "Matteo",
+                "last_name": "Ricci",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 68,
+                "first_name": "Daniele",
+                "last_name": "Verde",
+                "position": "forward"
+            }
+        ]
+    },
+    "Parma Calcio 1913": {
+        "team_id": "18",
+        "goals": 39,
+        "shots_per_game": 10.4,
+        "yellow_cards": 91,
+        "red_cards": 1,
+        "average_possession_percentage": 48.4,
+        "average_pass_accuracy_percentage": 82.5,
+        "aerials_won": 16.9,
+        "rating": 6.49,
+        "players": [
+            {
+                "player_id": 69,
+                "first_name": "Luigi",
+                "last_name": "Sepe",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 70,
+                "first_name": "Giuseppe",
+                "last_name": "Pezzella",
+                "position": "defender"
+            },
+            {
+                "player_id": 71,
+                "first_name": "Alberto",
+                "last_name": "Grassi",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 72,
+                "first_name": "Yann",
+                "last_name": "Karamoh",
+                "position": "forward"
+            }
+        ]
+    },
+    "Crotone": {
+        "team_id": "19",
+        "goals": 45,
+        "shots_per_game": 9.5,
+        "yellow_cards": 85,
+        "red_cards": 4,
+        "average_possession_percentage": 47.2,
+        "average_pass_accuracy_percentage": 80.4,
+        "aerials_won": 12.7,
+        "rating": 6.43,
+        "players": [
+            {
+                "player_id": 73,
+                "first_name": "Alex",
+                "last_name": "Cordaz",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 74,
+                "first_name": "Giuseppe",
+                "last_name": "Cuomo",
+                "position": "defender"
+            },
+            {
+                "player_id": 75,
+                "first_name": "Junior",
+                "last_name": "Messias",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 76,
+                "first_name": "Adam",
+                "last_name": "Ounas",
+                "position": "forward"
+            }
+        ]
+    },
+    "Benevento": {
+        "team_id": "20",
+        "goals": 40,
+        "shots_per_game": 11.0,
+        "yellow_cards": 90,
+        "red_cards": 5,
+        "average_possession_percentage": 44.2,
+        "average_pass_accuracy_percentage": 77.7,
+        "aerials_won": 13.4,
+        "rating": 6.43,
+        "players": [
+            {
+                "player_id": 77,
+                "first_name": "Lorenzo",
+                "last_name": "Montipo",
+                "position": "goalkeeper"
+            },
+            {
+                "player_id": 78,
+                "first_name": "Luca",
+                "last_name": "Antei",
+                "position": "defender"
+            },
+            {
+                "player_id": 79,
+                "first_name": "Nicolas",
+                "last_name": "Voila",
+                "position": "middlefielder"
+            },
+            {
+                "player_id": 80,
+                "first_name": "Marco",
+                "last_name": "Sau",
+                "position": "forward"
+            }
+        ]
+    }
+}
