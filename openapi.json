@@ -1,0 +1,300 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Serie A Teams API",
+    "description": "API for managing Serie A teams and players",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/teams": {
+      "get": {
+        "summary": "Get all teams",
+        "responses": {
+          "200": {
+            "description": "A list of teams",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Team"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add a new team",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Team"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Team added"
+          }
+        }
+      }
+    },
+    "/teams/{teamid}": {
+      "get": {
+        "summary": "Get a team by ID",
+        "parameters": [
+          {
+            "name": "teamid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A single team",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Team"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update a team",
+        "parameters": [
+          {
+            "name": "teamid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Team"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Team updated"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a team",
+        "parameters": [
+          {
+            "name": "teamid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Team deleted"
+          }
+        }
+      }
+    },
+    "/teams/name/{team}": {
+      "get": {
+        "summary": "Get a team by name",
+        "parameters": [
+          {
+            "name": "team",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A single team",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Team"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/teams/{teamid}/players": {
+      "get": {
+        "summary": "Get players from a team",
+        "parameters": [
+          {
+            "name": "teamid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of players",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Player"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/teams/name/{team}/players": {
+      "get": {
+        "summary": "Get players by team name",
+        "parameters": [
+          {
+            "name": "team",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of players",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Player"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/teams/{teamid}/players/position/{position}": {
+      "get": {
+        "summary": "Get a player by team ID and position",
+        "parameters": [
+          {
+            "name": "teamid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "position",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A single player",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Player"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Team": {
+        "type": "object",
+        "properties": {
+          "teamid": {
+            "type": "integer"
+          },
+          "team": {
+            "type": "string"
+          },
+          "goals": {
+            "type": "integer"
+          },
+          "shotspg": {
+            "type": "number"
+          },
+          "yellow_cards": {
+            "type": "integer"
+          },
+          "red_cards": {
+            "type": "integer"
+          },
+          "avgpossessionperc": {
+            "type": "number"
+          },
+          "avgpassaccperc": {
+            "type": "number"
+          },
+          "aerialswon": {
+            "type": "number"
+          },
+          "rating": {
+            "type": "number"
+          }
+        }
+      },
+      "Player": {
+        "type": "object",
+        "properties": {
+          "playerid": {
+            "type": "integer"
+          },
+          "playerfirstname": {
+            "type": "string"
+          },
+          "playerlastname": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string"
+          },
+          "teamid": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}
