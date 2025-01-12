@@ -40,9 +40,10 @@ with app.app_context():
     db.create_all()
 
 
-def response_wrapper(data, message="Success", status=200):
+def response_wrapper(data, context,message="Success", status=200):
     return jsonify({
         "status": status,
+        "@context": context,
         "message": message,
         "data": data
     }), status
@@ -55,49 +56,75 @@ def not_found_error(error):
 def get_teams():
     try:
         teams = Team.query.all()
-        return response_wrapper([team.as_dict() for team in teams])
+        return response_wrapper([team.as_dict() for team in teams],context={
+            "@vocab": "http://schema.org/",
+            "team": "name",
+            "teamid": "identifier"
+        })
     except SQLAlchemyError as e:
-        return response_wrapper(str(e), "Database error", 500)
+        return response_wrapper(str(e), "","Database error", 500)
 
 @app.route('/teams/name/<string:team>', methods=['GET'])
 def get_team_by_name(team):
     try:
         team = Team.query.filter_by(team=team).first_or_404()
-        return response_wrapper(team.as_dict())
+        return response_wrapper(team.as_dict(),context={
+            "@vocab": "http://schema.org/",
+            "team": "name",
+            "teamid": "identifier"
+        })
     except SQLAlchemyError as e:
-        return response_wrapper(str(e), "Database error", 500)
+        return response_wrapper(str(e), "","Database error", 500)
 
 @app.route('/teams/<int:teamid>/players', methods=['GET'])
 def get_players_from_team(teamid):
     try:
         players = Player.query.filter_by(teamid=teamid).all()
-        return response_wrapper([player.as_dict() for player in players])
+        return response_wrapper([player.as_dict() for player in players],context={
+            "@vocab": "http://schema.org/",
+            "playerfirstname": "givenName",
+            "playerlastname": "familyName",
+            "teamid": "identifier"
+        })
     except SQLAlchemyError as e:
-        return response_wrapper(str(e), "Database error", 500)
+        return response_wrapper(str(e), "", "Database error", 500)
 
 @app.route('/teams/<int:teamid>', methods=['GET'])
 def get_team(teamid):
     try:
         team = Team.query.get_or_404(teamid)
-        return response_wrapper(team.as_dict())
+        return response_wrapper(team.as_dict(),context={
+            "@vocab": "http://schema.org/",
+            "team": "name",
+            "teamid": "identifier"
+        })
     except SQLAlchemyError as e:
-        return response_wrapper(str(e), "Database error", 500)
+        return response_wrapper(str(e), "","Database error", 500)
 
 @app.route('/teams/name/<string:team>/players', methods=['GET'])
 def get_players_by_team_name(team):
     try:
         players = db.session.query(Player).join(Team).filter(Team.team == team).all()
-        return response_wrapper([player.as_dict() for player in players])
+        return response_wrapper([player.as_dict() for player in players], context={
+        "@vocab": "http://schema.org/",
+        "playerfirstname": "givenName",
+        "playerlastname": "familyName",
+        "teamid": "identifier"})
     except SQLAlchemyError as e:
-        return response_wrapper(str(e), "Database error", 500)
+        return response_wrapper(str(e), "","Database error", 500)
 
 @app.route('/teams/<string:teamid>/players/position/<string:position>', methods=['GET'])
 def get_player(teamid, position):
     try:
         player = Player.query.filter_by(teamid=teamid, position=position).first_or_404()
-        return response_wrapper(player.as_dict())
+        return response_wrapper(player.as_dict(), context={
+            "@vocab": "http://schema.org/",
+            "playerfirstname": "givenName",
+            "playerlastname": "familyName",
+            "teamid": "identifier"
+        })
     except SQLAlchemyError as e:
-        return response_wrapper(str(e), "Database error", 500)
+        return response_wrapper(str(e), "", "Database error", 500)
 
 
 
@@ -109,9 +136,13 @@ def add_team():
         print(new_team.teamid)
         db.session.add(new_team)
         db.session.commit()
-        return response_wrapper(new_team.as_dict(), "Team added", 201)
+        return response_wrapper(new_team.as_dict(), context={
+            "@vocab": "http://schema.org/",
+            "team": "name",
+            "teamid": "identifier"
+        }, message= "Team added", status=201)
     except SQLAlchemyError as e:
-        return response_wrapper(str(e), "Database error", 500)
+        return response_wrapper(str(e), "","Database error", 500)
 
 @app.route('/teams/<int:teamid>', methods=['PUT'])
 def update_team(teamid):
@@ -121,9 +152,13 @@ def update_team(teamid):
         for key, value in data.items():
             setattr(team, key, value)
         db.session.commit()
-        return response_wrapper(team.as_dict(), "Team updated")
+        return response_wrapper(team.as_dict(), context={
+            "@vocab": "http://schema.org/",
+            "team": "name",
+            "teamid": "identifier"
+        },message="Team updated")
     except SQLAlchemyError as e:
-        return response_wrapper(str(e), "Database error", 500)
+        return response_wrapper(str(e), "", "Database error", 500)
 
 @app.route('/teams/<int:teamid>', methods=['DELETE'])
 def delete_team(teamid):
@@ -131,9 +166,15 @@ def delete_team(teamid):
         team = Team.query.get_or_404(teamid)
         db.session.delete(team)
         db.session.commit()
-        return response_wrapper(None, "Team deleted")
+        return response_wrapper(None,
+        context={
+            "@vocab": "http://schema.org/",
+            "team": "name",
+            "teamid": "identifier"
+        }
+        , message="Team deleted")
     except SQLAlchemyError as e:
-        return response_wrapper(str(e), "Database error", 500)
+        return response_wrapper(str(e), "", "Database error", 500)
 
 @app.route('/openapi', methods=['GET'])
 def get_openapi_spec():
@@ -142,7 +183,7 @@ def get_openapi_spec():
             spec = file.read()
         return jsonify(json.loads(spec))
     except Exception as e:
-        return response_wrapper(str(e), "Error reading OpenAPI spec", 500)
+        return response_wrapper(str(e), "", message="Error reading OpenAPI spec", status=500)
 
 if __name__ == '__main__':
     app.run(debug=True)
